@@ -10,6 +10,7 @@ Source0:	%{module}-%{version}.tar.bz2
 License: 	GPL
 Group: 		Development/Python
 Url: 		http://gmpy.sourceforge.net/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	libgmp
 BuildRequires:	libgmp-devel
 BuildRequires:  python-devel
