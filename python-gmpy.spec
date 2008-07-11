@@ -1,13 +1,14 @@
 %define module	gmpy
 %define name	python-%{module}
-%define version 1.01
+%define version 1.03
+%define release %mkrel 1
 
 Summary:	Python interface to GMP
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 3
-Source0:	%{module}-%{version}.tar.bz2
-License: 	GPL
+Release:	%{release}
+Source0:	%{module}-%{version}.zip
+License: 	LGPL
 Group: 		Development/Python
 Url: 		http://gmpy.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -25,7 +26,7 @@ rational and floating-point arithmetic in any base. Only
 cross-platform functionality is of interest, at least for now.
 
 %prep
-%setup -q -n %{module}
+%setup -q -n %{module}-%{version}
 
 %build
 %__python ./setup.py build
@@ -40,6 +41,3 @@ rm -rf %{buildroot}
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
 %doc README doc/ test/
-
-
-
