@@ -1,6 +1,6 @@
 %define module	gmpy
 %define name	python-%{module}
-%define version 1.14
+%define version 1.15
 %define release %mkrel 1
 
 Summary:	Python interface to GMP
