@@ -18,8 +18,8 @@ Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # GMP versions before 4.2.4 have a bug that cause gmpy to segfault.
-Requires:	libgmp >= 4.2.4
-BuildRequires:	libgmp-devel >= 4.2.4
+Requires:	gmp >= 4.2.4
+BuildRequires:	gmp-devel >= 4.2.4
 %py_requires -d
 
 %description
