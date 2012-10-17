@@ -1,13 +1,18 @@
 %define module	gmpy
 %define name	python-%{module}
-%define version 1.15
-%define release %mkrel 1
+%define version 1.16
+%define	rel		1
+%if %mdkversion < 201100
+%define release %mkrel %{rel}
+%else
+%define	release	%{rel}
+%endif
 
 Summary:	Python interface to GMP
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{module}-%{version}.zip
+Source0:	http://gmpy.googlecode.com/files/%{module}-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
@@ -35,11 +40,12 @@ find -name .svn | xargs rm -rf
 
 %install
 %__rm -rf %{buildroot}
-%__python ./setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root)
 %doc README lgpl-2.1.txt doc/ test/
+%py_platsitedir/%{module}*
