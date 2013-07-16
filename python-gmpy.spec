@@ -2,8 +2,8 @@
 
 Summary:	Python interface to GMP
 Name:		python-%{module}
-Version:	1.15
-Release:	3
+Version:	1.16
+Release:	1
 Source0:	%{module}-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
