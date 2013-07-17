@@ -8,7 +8,8 @@ Source0:	%{module}-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
-Requires:	gmp
+# A hack...
+Requires:	%{_lib}gmp
 BuildRequires:	gmp-devel >= 4.2.4
 BuildRequires:  python-devel
 
