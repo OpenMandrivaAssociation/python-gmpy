@@ -8,8 +8,7 @@ Source0:	%{module}-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
-# GMP versions before 4.2.4 have a bug that cause gmpy to segfault.
-Requires:	libgmp10
+Requires:	gmp
 BuildRequires:	gmp-devel >= 4.2.4
 %py_requires -d
 
@@ -78,12 +77,12 @@ find -name .svn | xargs rm -rf
     - kill re-definition of %%buildroot on Pixel's request
 
 
-* Sun Jan 21 2007 Nicolas Lécureuil <neoclust@mandriva.org> 1.01-3mdv2007.0
+* Sun Jan 21 2007 Nicolas LÃ©cureuil <neoclust@mandriva.org> 1.01-3mdv2007.0
 + Revision: 111518
 - Rebuicl for new python
 - import python-gmpy-1.01-2mdk
 
-* Thu May 04 2006 Nicolas L�cureuil <neoclust@mandriva.org> 1.01-2mdk
+* Thu May 04 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.01-2mdk
 - Add BuildRequires
 - Fix mkrel for rpmbuildupdate
 
