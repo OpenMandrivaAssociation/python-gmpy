@@ -10,7 +10,7 @@ Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
 Requires:	gmp
 BuildRequires:	gmp-devel >= 4.2.4
-%py_requires -d
+BuildRequires:  python-devel
 
 %description
 The General Multiprecision PYthon project (GMPY) focuses on
