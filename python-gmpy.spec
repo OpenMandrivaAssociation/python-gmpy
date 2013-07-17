@@ -9,7 +9,7 @@ License: 	LGPLv2.1
 Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
 # A hack...
-Requires:	%{_lib}gmp
+Requires:	%{_lib}gmp10
 BuildRequires:	gmp-devel >= 4.2.4
 BuildRequires:  python-devel
 
