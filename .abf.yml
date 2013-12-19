@@ -1,2 +1,4 @@
+removed_sources:
+  gmpy-1.16.zip: e8d23292d0a984156c8e73c2b39c9318f9135ef6
 sources:
-  "gmpy-1.16.zip": e8d23292d0a984156c8e73c2b39c9318f9135ef6
+  gmpy-1.17.zip: b5353453fa7a4b7d6480686c3a9b91d1c4455957

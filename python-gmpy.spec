@@ -2,9 +2,9 @@
 
 Summary:	Python interface to GMP
 Name:		python-%{module}
-Version:	1.16
+Version:	1.17
 Release:	1
-Source0:	%{module}-%{version}.zip
+Source0:	http://gmpy.googlecode.com/files/gmpy-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
 Url: 		http://code.google.com/p/gmpy/
@@ -89,4 +89,5 @@ find -name .svn | xargs rm -rf
 
 * Wed May 03 2006 Lev Givon <lev@columbia.edu> 1.01-1mdk
 - Initial Mandriva package.
+
 
