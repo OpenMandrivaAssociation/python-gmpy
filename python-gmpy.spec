@@ -3,7 +3,7 @@
 Summary:	Python interface to GMP
 Name:		python-%{module}
 Version:	1.17
-Release:	2
+Release:	3
 Source0:	http://gmpy.googlecode.com/files/gmpy-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
