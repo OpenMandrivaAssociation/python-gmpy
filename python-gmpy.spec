@@ -7,7 +7,7 @@ Release:	3
 Source0:	http://gmpy.googlecode.com/files/gmpy-%{version}.zip
 License: 	LGPLv2.1
 Group: 		Development/Python
-Url: 		http://code.google.com/p/gmpy/
+Url: 		https://code.google.com/p/gmpy/
 BuildRequires:	gmp-devel >= 4.2.4
 BuildRequires:  python-devel
 
